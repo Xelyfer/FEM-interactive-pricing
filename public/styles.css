@@ -265,11 +265,14 @@ input[type="checkbox"]:checked + .slider::before {
 
   .billing-plan {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
       "pageviews cost"
       "slider slider"
       "paymenttype paymenttype";
     justify-content: space-around;
+    padding: 3.5em;
   }
 
   .billing-plan > p:first-child {
@@ -290,7 +293,7 @@ input[type="checkbox"]:checked + .slider::before {
   }
 
   .billing-type > p:last-child {
-    left: 330px;
+    left: 360px;
   }
 
   .bottom-container {
